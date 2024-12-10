@@ -1,24 +1,20 @@
 abstract class Robber {
-    
-    public abstract void RobbingClass();
+public abstract void RobbingClass();
+public abstract int RowHouses(int[] money);
+public abstract int RoundHouses(int[] money);
+public abstract int SquareHouse(int[] money);
+public abstract int MultiHouseBuilding(int[] money);
 
-    public abstract int RowHouses(int[] money);
-    public abstract int RoundHouses(int[] money);
-    public abstract int SquareHouse(int[] money);
-    public abstract int MultiHouseBuilding(int[] money);
-
-    
-    public void MachineLearning() {
-        System.out.println("I love MachineLearning.");
-    }
-}
+public void MachineLearning() 
+{
+System.out.println("I love MachineLearning.");
+}}
 
 class JAVAProfessionalRobber extends Robber {
-
-    
-    @Override
-    public void RobbingClass() {
-        System.out.println("MScAI&ML");
+@Override
+public void RobbingClass() 
+    {
+    System.out.println("MScAI&ML");
     }
 
     @Override
@@ -56,21 +52,18 @@ class JAVAProfessionalRobber extends Robber {
         }
         return prevOne;
     }
+public static void main(String[] args) {
+JAVAProfessionalRobber robber = new JAVAProfessionalRobber();
+robber.RobbingClass();
+robber.MachineLearning();
+int[] rowHouses = {1, 2, 3, 0};
+int[] roundHouses = {1, 2, 3,4};
+int[] squareHouses = {1, 2, 3, 1};
+int[] multiHouse = {5, 3, 4, 11, 2};
 
-    public static void main(String[] args) {
-        JAVAProfessionalRobber robber = new JAVAProfessionalRobber();
-
-        robber.RobbingClass();
-        robber.MachineLearning();
-
-        int[] rowHouses = {2, 7, 9, 3, 1};
-        int[] roundHouses = {2, 3, 2};
-        int[] squareHouses = {1, 2, 3, 1};
-        int[] multiHouse = {5, 3, 4, 11, 2};
-
-        System.out.println("Row Houses: " + robber.RowHouses(rowHouses));
-        System.out.println("Round Houses: " + robber.RoundHouses(roundHouses));
-        System.out.println("Square Houses: " + robber.SquareHouse(squareHouses));
-        System.out.println("MultiHouse Building: " + robber.MultiHouseBuilding(multiHouse));
+System.out.println("Row Houses: " + robber.RowHouses(rowHouses));
+System.out.println("Round Houses: " + robber.RoundHouses(roundHouses));
+System.out.println("Square Houses: " + robber.SquareHouse(squareHouses));
+System.out.println("MultiHouse Building: " + robber.MultiHouseBuilding(multiHouse));
     }
 }
